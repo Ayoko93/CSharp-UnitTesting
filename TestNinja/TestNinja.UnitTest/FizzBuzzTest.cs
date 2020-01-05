@@ -16,30 +16,30 @@ namespace TestNinja.UnitTest
         {
             var result = FizzBuzz.GetOutput(15);
 
-            Assert.That(result, Is.EqualTo("FizzBuzz").IgnoreCase);
+            Assert.That(result, Is.EqualTo("FizzBuzz"));
         }
         
         [Test]
-        public void GetOutput_NumberIsDividableByThree_ReturnFizz()
+        public void GetOutput_NumberIsDividableByThreeOnly_ReturnFizz()
         {
             var result = FizzBuzz.GetOutput(3);
 
-            Assert.That(result, Is.EqualTo("Fizz").IgnoreCase);
+            Assert.That(result, Is.EqualTo("Fizz"));
         }
         
         [Test]
-        public void GetOutput_NumberIsDividableByFive_ReturnBuzz()
+        public void GetOutput_NumberIsDividableByFiveOnly_ReturnBuzz()
         {
             var result = FizzBuzz.GetOutput(5);
 
-            Assert.That(result, Is.EqualTo("Buzz").IgnoreCase);
+            Assert.That(result, Is.EqualTo("Buzz"));
         }
         [Test]
         public void GetOutput_NumberIsNotDividableByThreeOrFive_ReturnNumber()
         {
             var result = FizzBuzz.GetOutput(2);
 
-            Assert.That(result, Is.EqualTo("2").IgnoreCase);
+            Assert.That(result, Is.EqualTo("2"));
         }
     }
 }
